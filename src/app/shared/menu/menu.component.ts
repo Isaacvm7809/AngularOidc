@@ -16,14 +16,14 @@ export class MenuComponent implements OnInit {
   oidc: OidcSecurityService = inject(OidcSecurityService);
 
   ngOnInit(): void {
-    this.oidc
-      .checkAuth()
-      .subscribe((loginResponse: LoginResponse) => {
-        const { isAuthenticated, userData, accessToken, idToken, configId } =
-          loginResponse;
-          console.log(userData);
-          console.log(idToken);
-      });
+ //   this.oidc
+ //     .checkAuth()
+      //.subscribe((loginResponse: LoginResponse) => {
+//        const { isAuthenticated, userData, accessToken, idToken, configId } =
+          //loginResponse;
+          //console.log(userData);
+          //console.log(idToken);
+      //});
   }
 
   login() {
